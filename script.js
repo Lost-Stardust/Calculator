@@ -21,3 +21,18 @@ function divide(a, b) {
   console.log(result);
   return result
 }
+
+function operate(operator, num1, num2) {
+  if (operator == '+') {
+    add(num1, num2);
+  };
+  if (operator == '-') {
+    subtract(num1, num2);
+  };
+  if (operator == '*') {
+    multiply(num1, num2);
+  };
+  if (operator == '/') {
+    divide(num1, num2);
+  };
+};
