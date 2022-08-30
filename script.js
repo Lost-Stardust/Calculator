@@ -10,8 +10,8 @@ function subtract(a, b) {
   return result;
 };
   
-function multiply(array) {
-  let result = array.reduce((a,b) => a*b, 1);
+function multiply(a, b) {
+  let result = a * b;
   console.log(result);
   return result
 }
