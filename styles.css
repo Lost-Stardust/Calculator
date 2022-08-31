@@ -15,3 +15,8 @@ body {
     border: solid rgb(255, 230, 0) 3px;
     height: 100px;
 }
+#buttons {
+    border: solid rgb(115, 212, 236) 3px;
+    height: 47vh;
+    margin: 3vh;
+}
