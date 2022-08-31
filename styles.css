@@ -22,3 +22,15 @@ body {
     margin: 2.5vh;
     display: flex;
 }
+#numbers {
+    display: flex;
+    border: solid red 2px;
+    width: 60vh;
+}
+.number {
+    margin: .6vh;
+    border: solid black 2px;
+    height:3vh;
+    width: 6vh;
+    padding: 1vh;
+}
