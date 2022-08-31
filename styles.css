@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 98vh;
+    min-width: 100vh;
+    box-sizing: border-box;
+}
+#calculator {
+    border: solid black 2px;
+    height: 67vh;
+    width: 100vh;
+}
+#display {
+    border: solid rgb(255, 230, 0) 3px;
+    height: 100px;
+}
