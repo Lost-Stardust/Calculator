@@ -26,11 +26,13 @@ body {
     display: flex;
     border: solid red 2px;
     width: 60vh;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 .number {
-    margin: .6vh;
+    margin: .5vh;
     border: solid black 2px;
-    height:3vh;
-    width: 6vh;
+    height:8vh;
+    width: 19vh;
     padding: 1vh;
 }
