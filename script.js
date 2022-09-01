@@ -1,22 +1,22 @@
-function add(a, b) {
+function addition(a, b) {
   let result = a + b;
   console.log(result);
   return result;
 };
   
-function subtract(a, b) {
+function subtraction(a, b) {
   let result = a - b;
   console.log(result);
   return result;
 };
   
-function multiply(a, b) {
+function multiplication(a, b) {
   let result = a * b;
   console.log(result);
   return result
 }
   
-function divide(a, b) {
+function division(a, b) {
   let result = a / b;
   console.log(result);
   return result
@@ -24,15 +24,19 @@ function divide(a, b) {
 
 function operate(operator, num1, num2) {
   if (operator == '+') {
-    add(num1, num2);
+    addition(num1, num2);
   };
   if (operator == '-') {
-    subtract(num1, num2);
+    subtraction(num1, num2);
   };
   if (operator == '*') {
-    multiply(num1, num2);
+    multiplication(num1, num2);
   };
   if (operator == '/') {
-    divide(num1, num2);
+    division(num1, num2);
   };
 };
+
+let display = document.querySelector('#display');
+let one = document.querySelector('.one');
+console.log(one)
