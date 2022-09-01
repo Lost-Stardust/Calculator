@@ -57,3 +57,77 @@ let divide = document.querySelector('.divide');
 let equal = document.querySelector('.equal');
 let clear = document.querySelector('.clear');
 
+let displayValue = parseInt(display.textContent);
+console.log(displayValue)
+let array = [];
+
+one.addEventListener('click', () => {
+  displayValue = display.textContent = 1;
+  array.push(displayValue)
+  console.log(array)
+  console.log(displayValue)
+  display.innerHTML = array.join('')
+})
+two.addEventListener('click', () => {
+  displayValue = display.textContent = 2;
+  array.push(displayValue)
+  console.log(array)
+  console.log(displayValue)
+  display.innerHTML = array.join('')
+})
+three.addEventListener('click', () => {
+  displayValue = display.textContent = 3;
+  array.push(displayValue)
+  console.log(array)
+  console.log(displayValue)
+  display.innerHTML = array.join('')
+})
+four.addEventListener('click', () => {
+  displayValue = display.textContent = 4;
+  array.push(displayValue)
+  console.log(array)
+  console.log(displayValue)
+  display.innerHTML = array.join('')
+})
+five.addEventListener('click', () => {
+  displayValue = display.textContent = 5;
+  array.push(displayValue)
+  console.log(array)
+  console.log(displayValue)
+  display.innerHTML = array.join('')
+})
+six.addEventListener('click', () => {
+  displayValue = display.textContent = 6;
+  array.push(displayValue)
+  console.log(array)
+  console.log(displayValue)
+  display.innerHTML = array.join('')
+})
+seven.addEventListener('click', () => {
+  displayValue = display.textContent = 7;
+  array.push(displayValue)
+  console.log(array)
+  console.log(displayValue)
+  display.innerHTML = array.join('')
+})
+eight.addEventListener('click', () => {
+  displayValue = display.textContent = 8;
+  array.push(displayValue)
+  console.log(array)
+  console.log(displayValue)
+  display.innerHTML = array.join('')
+})
+nine.addEventListener('click', () => {
+  displayValue = display.textContent = 9;
+  array.push(displayValue)
+  console.log(array)
+  console.log(displayValue)
+  display.innerHTML = array.join('')
+})
+zero.addEventListener('click', () => {
+  displayValue = display.textContent = 0;
+  array.push(displayValue)
+  console.log(array)
+  console.log(displayValue)
+  display.innerHTML = array.join('')
+})
