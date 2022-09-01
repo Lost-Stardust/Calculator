@@ -21,19 +21,26 @@ body {
     height: 45vh;
     margin: 2.5vh;
     display: flex;
-}
-#numbers {
-    display: flex;
-    border: solid red 2px;
-    width: 60vh;
     flex-wrap: wrap;
-    align-content: space-between;
+    padding-left: 9px;
 }
 .number {
     margin: .5vh;
-    border: solid black 2px;
     height:8vh;
-    width: 19vh;
+    border: none;
+    width: 22vh;
     padding: 1vh;
     border-radius: 4px;
+}
+.opr {
+    margin: .5vh;
+    border: none;
+    height:8vh;
+    width: 22vh;
+    padding: 1vh;
+    border-radius: 4px;
+    flex-wrap: wrap;
+}
+button {
+    font-size: 30px;
 }
