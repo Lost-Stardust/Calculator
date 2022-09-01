@@ -10,6 +10,7 @@ body {
     border: solid black 2px;
     height: 67vh;
     width: 100vh;
+    background-color: #788294;
 }
 #display {
     border: solid rgb(255, 230, 0) 3px;
