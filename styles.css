@@ -12,11 +12,6 @@ body {
     width: 100vh;
     background-color: #788294;
 }
-#display {
-    border: solid rgb(255, 230, 0) 3px;
-    height: 100px;
-    margin: 2.5vh;
-}
 #buttons {
     border: solid rgb(115, 212, 236) 3px;
     height: 45vh;
@@ -40,4 +35,8 @@ button {
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
+    background-color: #53d39e;
+    height: 90px;
+    margin: 2.5vh;
+    border-radius: 8px;
 }
