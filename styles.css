@@ -40,3 +40,6 @@ button {
     margin: 2.5vh;
     border-radius: 8px;
 }
+button:hover {
+    color: #ef476f;
+}
