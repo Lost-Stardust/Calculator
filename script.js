@@ -39,4 +39,12 @@ function operate(operator, num1, num2) {
 
 let display = document.querySelector('#display');
 let one = document.querySelector('.one');
-console.log(one)
+let two = document.querySelector('.two');
+let three = document.querySelector('.three');
+let four = document.querySelector('.four');
+let five = document.querySelector('.five');
+let six = document.querySelector('.six');
+let seven = document.querySelector('.seven');
+let eight = document.querySelector('.eight');
+let nine = document.querySelector('.nine')
+let zero = document.querySelector('.zero')
