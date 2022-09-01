@@ -25,25 +25,14 @@ body {
     flex-wrap: wrap;
     padding-left: 9px;
 }
-.number {
-    margin: .5vh;
-    height:8vh;
-    border: none;
-    width: 22vh;
-    padding: 1vh;
-    border-radius: 4px;
-}
-.opr {
-    margin: .5vh;
-    border: none;
-    height:8vh;
-    width: 22vh;
-    padding: 1vh;
-    border-radius: 4px;
-    flex-wrap: wrap;
-}
 button {
     font-size: 24px;
+    margin: .5vh;
+    height:8vh;
+    border: none;
+    width: 22vh;
+    padding: 1vh;
+    border-radius: 4px;
 }
 #display {
     font-size: 50px;
