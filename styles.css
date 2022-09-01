@@ -9,7 +9,7 @@ body {
 #calculator {
     border: solid black 2px;
     height: 67vh;
-    width: 100vh;
+    width: 60vh;
     background-color: #788294;
 }
 #buttons {
@@ -18,14 +18,14 @@ body {
     margin: 2.5vh;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 9px;
+    justify-content: space-between;
 }
 button {
     font-size: 24px;
     margin: .5vh;
     height:8vh;
     border: none;
-    width: 22vh;
+    width: 12vh;
     padding: 1vh;
     border-radius: 4px;
 }
