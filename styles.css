@@ -13,7 +13,6 @@ body {
     background-color: #788294;
 }
 #buttons {
-    border: solid rgb(115, 212, 236) 3px;
     height: 45vh;
     margin: 2.5vh;
     display: flex;
