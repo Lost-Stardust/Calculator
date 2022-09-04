@@ -57,8 +57,6 @@ let divide = document.querySelector('.divide');
 let equal = document.querySelector('.equal');
 let clear = document.querySelector('.clear');
 
-let displayValue = parseInt(display.textContent);
-console.log(displayValue)
 let array = [];
 
 one.addEventListener('click', () => {
@@ -130,4 +128,40 @@ zero.addEventListener('click', () => {
   console.log(array)
   console.log(displayValue)
   display.innerHTML = array.join('')
+})
+
+//select operation buttons
+
+add.addEventListener('click', () => {
+  value = display.textContent = '+';
+  array.push(value)
+  console.log(array)
+  console.log(value)
+  display.innerHTML = array.join('')
+  let displayValue = parseInt(display.textContent);
+  console.log(displayValue)
+})
+subtract.addEventListener('click', () => {
+  displayValue = display.textContent = '-';
+  array.push(displayValue)
+  console.log(array)
+  console.log(displayValue)
+  display.innerHTML = array.join('')
+})
+multiply.addEventListener('click', () => {
+  displayValue = display.textContent = '×';
+  array.push(displayValue)
+  console.log(array)
+  console.log(displayValue)
+  display.innerHTML = array.join('')
+})
+divide.addEventListener('click', () => {
+  displayValue = display.textContent = '÷';
+  array.push(displayValue)
+  console.log(array)
+  console.log(displayValue)
+  display.innerHTML = array.join('')
+})
+equal.addEventListener('click', () => {
+  
 })
