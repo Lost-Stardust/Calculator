@@ -53,10 +53,27 @@ function popDisplay(input) {
   concat(displayValue)
 };
 
+let num1 = displayValue;
 console.log(memArray);
-function concat(num) {
-  num = parseInt(memArray.join(''));
-  console.log(num);
-  console.log(typeof(num))
+function concat() {
+  num1 = parseInt(memArray.join(''));
+  console.log(num1);
+  console.log(typeof(num1));
+  return num1;
+};
 
-}
+let result;
+function operator(array, ...value) {
+  value.forEach((item) => {
+    const index = array.indexOf(item);
+    if (index > -1) {
+      result = array.splice(index, 1);
+    };
+  });
+  console.log(array);
+  console.log(result);
+  return result;
+};
+
+buttons.item(14).addEventListener('click', operate(result, num1,));
+buttons.item(15).addEventListener('click', () => location.reload());
