@@ -12,12 +12,12 @@ function popDisplay(input) {
   memArray.push(displayValue);
   console.log(array);
   display.innerHTML = array.join('');
-  concat(displayValue)
+  getNum1(displayValue)
 };
 
 let num1 = displayValue;
 console.log(memArray);
-function concat() {
+function getNum1() {
   num1 = parseInt(array.join(''));
   console.log(num1);
   console.log(typeof(num1));
@@ -26,20 +26,20 @@ function concat() {
 
 let result;
 let index;
-function operator(array, ...value) {
+function getOperator(array, ...value) {
   value.forEach((item) => {
     const index = array.indexOf(item);
     if (index > -1) {
       result = array.splice(index, 1);
     };
-    removeFromArr(index, index)
+    getNum2(index, index)
   });
   console.log(array);
   console.log(result);
   return result;
 };
 
-function removeFromArr(indice, count) {
+function getNum2(indice, count) {
   
   let start = indice - count -1
   if(start < 0) start = 0
@@ -74,7 +74,7 @@ function division(a, b) {
   return result
 }
 
-function operate(operator, x, y) {
+function calculate(operator, x, y) {
   if (operator == '+') {
     console.log(addition(x, y));
   };
@@ -96,6 +96,6 @@ buttons.item(14).addEventListener('click', function() {
   console.log(num1)
   console.log(num2)
 
-  operate(result, num1, num2);
+  calculate(result, num1, num2);
 });
 buttons.item(15).addEventListener('click', () => location.reload());
