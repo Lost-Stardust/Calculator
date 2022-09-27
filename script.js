@@ -1,4 +1,54 @@
+let display = document.querySelector('#display');
+let buttons = document.querySelectorAll('button')
+console.log(buttons);
+
 let memArray = [];
+let array = [];
+
+let displayValue;
+function popDisplay(input) {
+  displayValue = display.textContent = `${input}`;
+  array.push(displayValue);
+  memArray.push(displayValue);
+  console.log(array);
+  display.innerHTML = array.join('');
+  concat(displayValue)
+};
+
+let num1 = displayValue;
+console.log(memArray);
+function concat() {
+  num1 = parseInt(array.join(''));
+  console.log(num1);
+  console.log(typeof(num1));
+  return num1;
+};
+
+let result;
+let index;
+function operator(array, ...value) {
+  value.forEach((item) => {
+    const index = array.indexOf(item);
+    if (index > -1) {
+      result = array.splice(index, 1);
+    };
+    removeFromArr(index, index)
+  });
+  console.log(array);
+  console.log(result);
+  return result;
+};
+
+function removeFromArr(indice, count) {
+  
+  let start = indice - count -1
+  if(start < 0) start = 0
+  let end = indice + count
+  memArray.splice(start, end)  
+
+  return console.log(memArray)
+}
+
 
 function addition(a, b) {
   let result = a + b;
@@ -38,55 +88,6 @@ function operate(operator, x, y) {
     console.log(division(x, y))
   };
 };
-
-let display = document.querySelector('#display');
-let buttons = document.querySelectorAll('button')
-console.log(buttons);
-let array = [];
-let displayValue;
-function popDisplay(input) {
-  displayValue = display.textContent = `${input}`;
-  array.push(displayValue);
-  memArray.push(displayValue);
-  console.log(array);
-  display.innerHTML = array.join('');
-  concat(displayValue)
-};
-
-let num1 = displayValue;
-console.log(memArray);
-function concat() {
-  num1 = parseInt(array.join(''));
-  console.log(num1);
-  console.log(typeof(num1));
-  return num1;
-};
-
-let result;
-let index;
-function operator(array, ...value) {
-  value.forEach((item) => {
-    const index = array.indexOf(item);
-    if (index > -1) {
-      result = array.splice(index, 1);
-    };
-    removeFromArr(index, index)
-  });
-  console.log(array);
-  console.log(result);
-  return result;
-};
-
-
-function removeFromArr(indice, count) {
-  
-  let start = indice - count -1
-  if(start < 0) start = 0
-  let end = indice + count
-  memArray.splice(start, end)  
-
-  return console.log(memArray)
-}
 
 buttons.item(14).addEventListener('click', function() {
   console.log(memArray)
