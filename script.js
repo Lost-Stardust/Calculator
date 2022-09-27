@@ -52,25 +52,25 @@ function getNum2(indice, count) {
 
 function addition(a, b) {
   let result = a + b;
-  console.log(result);
+  popDisplay(result);
   return result;
 };
   
 function subtraction(a, b) {
   let result = a - b;
-  console.log(result);
+  popDisplay(result);
   return result;
 };
   
 function multiplication(a, b) {
   let result = a * b;
-  console.log(result);
+  popDisplay(result);
   return result
 }
   
 function division(a, b) {
   let result = a / b;
-  console.log(result);
+  popDisplay(result);
   return result
 }
 
@@ -81,10 +81,10 @@ function calculate(operator, x, y) {
   if (operator == '-') {
     console.log(subtraction(x, y));
   };
-  if (operator == '*') {
+  if (operator == '×') {
     console.log(multiplication(x, y))
   };
-  if (operator == '/') {
+  if (operator == '÷') {
     console.log(division(x, y))
   };
 };
@@ -95,7 +95,8 @@ buttons.item(14).addEventListener('click', function() {
   console.log(result)
   console.log(num1)
   console.log(num2)
-
+  
+  array = [ ];
   calculate(result, num1, num2);
 });
 buttons.item(15).addEventListener('click', () => location.reload());
