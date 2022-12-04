@@ -9,7 +9,7 @@ body {
 #calculator {
     border: solid black 2px;
     height: 67vh;
-    width: 60vh;
+    width: 460px;
     background-color: #788294;
 }
 #buttons {
