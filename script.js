@@ -19,3 +19,12 @@ function divide(x,y) {
 /*select all buttons*/ 
 let buttons = document.querySelectorAll("button")
 console.log(buttons)
+
+/*add event listener to all the number buttons*/
+let num1
+for(let i=0;i<=9;i++) {
+  buttons.item(i).addEventListener('click', () => {
+    num1 = buttons.item(i).textContent
+    console.log(num1)
+  })
+}
