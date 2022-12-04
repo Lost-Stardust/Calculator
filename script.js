@@ -15,3 +15,7 @@ function divide(x,y) {
   let divideResult = x + y
   return divideResult
 }
+
+/*select all buttons*/ 
+let buttons = document.querySelectorAll("button")
+console.log(buttons)
