@@ -20,11 +20,12 @@ function divide(x,y) {
 let buttons = document.querySelectorAll("button")
 console.log(buttons)
 
-/*add event listener to all the number buttons*/
-let num1
+/*add event listener to all the number buttons and 
+store the number clicked in a array*/
+const numArr = []
 for(let i=0;i<=9;i++) {
   buttons.item(i).addEventListener('click', () => {
-    num1 = buttons.item(i).textContent
-    console.log(num1)
+    numArr = buttons.item(i).textContent
+    console.log(numArr)
   })
 }
