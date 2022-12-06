@@ -25,7 +25,7 @@ store the number clicked in a array*/
 const numArr = []
 for(let i=0;i<=9;i++) {
   buttons.item(i).addEventListener('click', () => {
-    numArr = buttons.item(i).textContent
-    console.log(numArr)
+    numArr.push(buttons.item(i).textContent)
+    console.log(numArr.join(''))
   })
 }
