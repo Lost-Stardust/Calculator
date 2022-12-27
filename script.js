@@ -23,11 +23,12 @@ const display = document.querySelector("#display")
 console.log(display)
 
 /*add event listener to all the number buttons and 
-store the number clicked in a array*/
+store the number clicked in a array and display it*/
 const numArr = []
 for(let i=0;i<=9;i++) {
   buttons.item(i).addEventListener('click', () => {
     numArr.push(buttons.item(i).textContent)
     console.log(numArr.join(''))
+    display.textContent = (numArr.join(''))
   })
 }
