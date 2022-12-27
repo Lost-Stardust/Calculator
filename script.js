@@ -16,9 +16,11 @@ function divide(x,y) {
   return divideResult
 }
 
-/*select all buttons*/ 
+/*select all buttons and the display*/ 
 let buttons = document.querySelectorAll("button")
 console.log(buttons)
+const display = document.querySelector("#display")
+console.log(display)
 
 /*add event listener to all the number buttons and 
 store the number clicked in a array*/
