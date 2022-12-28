@@ -32,3 +32,12 @@ for(let i=0;i<=9;i++) {
     display.textContent = (numArr.join(''))
   })
 }
+let number1 = 0
+for(let i=9;i<=13;i++) {
+  buttons.item(i).addEventListener('click', () => {
+    const num1 = display.textContent
+    console.log(num1)
+    number1 = num1
+    console.log(number1)
+  })
+}
