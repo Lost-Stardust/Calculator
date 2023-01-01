@@ -55,18 +55,38 @@ let divide = buttons.item(13)
 
 
 add.onclick = () => {
-  add = true
+  if(display.textContent != '0') {
+    add = true
+  } else {
+    add = false
+  }
+  buttons.item(10).style.backgroundColor = '#FFC480';
   console.log(`add is ${add}`)
 }
 subtract.onclick = () => {
-  subtract = true
+  if(display.textContent != '0') {
+    subtract = true
+  } else {
+    subtract = false
+  }
+  buttons.item(11).style.backgroundColor = '#FFC480';
   console.log(`subtract is ${subtract}`)
 }
 multiply.onclick = () => {
-  multiply = true
+  if(display.textContent != '0') {
+    multiply = true
+  } else {
+    multiply = false
+  }
+  buttons.item(12).style.backgroundColor = '#FFC480';
   console.log(`multiply is ${multiply}`)
 }
 divide.onclick = () => {
-  divide = true
+  if(display.textContent != '0') {
+    divide = true
+  } else {
+    divide = false
+  }
+  buttons.item(13).style.backgroundColor = '#FFC480';
   console.log(`divide is ${divide}`)
 }
