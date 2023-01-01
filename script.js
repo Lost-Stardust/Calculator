@@ -1,18 +1,18 @@
 // create arithmetic functions 
 
-function add(x,y) {
+function additon(x,y) {
   let addResult = x + y
   return addResult
 }
-function subtract(x,y) {
+function subtraction(x,y) {
   let subtractResult = x - y
   return subtractResult
 }
-function multiply(x,y) {
+function multiplication(x,y) {
   let multiplyResult = x * y
   return multiplyResult
 }
-function divide(x,y) {
+function division(x,y) {
   let divideResult = x / y
   return divideResult
 }
@@ -46,4 +46,27 @@ for(let i=9;i<=13;i++) {
     number1 = num1
     console.log(number1)
   })
+}
+
+let add = buttons.item(10)
+let subtract = buttons.item(11)
+let multiply = buttons.item(12)
+let divide = buttons.item(13)
+
+
+add.onclick = () => {
+  add = true
+  console.log(`add is ${add}`)
+}
+subtract.onclick = () => {
+  subtract = true
+  console.log(`subtract is ${subtract}`)
+}
+multiply.onclick = () => {
+  multiply = true
+  console.log(`multiply is ${multiply}`)
+}
+divide.onclick = () => {
+  divide = true
+  console.log(`divide is ${divide}`)
 }
