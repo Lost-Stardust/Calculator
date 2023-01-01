@@ -41,7 +41,7 @@ button {
     overflow-x: auto;
 }
 button:hover {
-    font-weight: bold;
+    background-color: #cfcfcff8;
 }
 #display::-webkit-scrollbar {
     width: 1em;
