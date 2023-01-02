@@ -27,10 +27,15 @@ console.log(display)
 // add event listener to all the number buttons and display them
 
 const numArr = []
+let number1 = 0
 for(let i=0;i<=9;i++) {
   buttons.item(i).addEventListener('click', () => {
     numArr.push(buttons.item(i).textContent)
     display.textContent = (numArr.join(''))
+    const num1 = display.textContent
+    number1 = num1
+    console.log(`num1 is ${number1}`)
+    console.log(add)
   })
 }
 
@@ -38,55 +43,57 @@ for(let i=0;i<=9;i++) {
 // stores the value on display on operator click
 // uses global variable to get the value out of scope
 
-let number1 = 0
-for(let i=9;i<=13;i++) {
+let add = false
+let subtract = false
+let multiply = false
+let divide = false
+
+for(let i=10;i<=13;i++) {
   buttons.item(i).addEventListener('click', () => {
-    const num1 = display.textContent
-    console.log(num1)
-    number1 = num1
-    console.log(number1)
+    buttons.item(i).style.backgroundColor = '#FFC480';
+    console.log(buttons.item(i))
+     
   })
 }
 
-let add = buttons.item(10)
-let subtract = buttons.item(11)
-let multiply = buttons.item(12)
-let divide = buttons.item(13)
+ 
+buttons.item(10).addEventListener('click', () => {
+  if(display.textContent != '0') {
+    add = true;
+    console.log( `add is ${add}`)
+  }
+})
+buttons.item(11).addEventListener('click', () => {
+  if(display.textContent != '0') {
+    subtract = true;
+    console.log( `subtract is ${subtract}`)
+  }
+})
+buttons.item(12).addEventListener('click', () => {
+  if(display.textContent != '0') {
+    multiply = true;
+    console.log( `multiply is ${multiply}`)
+  }
+})
+buttons.item(13).addEventListener('click', () => {
+  if(display.textContent != '0') {
+    divide = true;
+    console.log( `divide is ${divide}`)
+  }
+})
 
-
-add.onclick = () => {
-  if(display.textContent != '0') {
-    add = true
-  } else {
-    add = false
+const numArr2 = []
+let number2 = 0;
+if((add == true ) || (multiply == true) 
+|| (divide == true) || (subtract == true)) {
+  for(let i=0;i<=9;i++) {
+    buttons.item(i).addEventListener('click', () => {
+      display.textContent = '';
+      numArr2.push(buttons.item(i).textContent)
+      display.textContent = (numArr2.join(''))
+      const num2 = display.textContent
+      number2 = num2
+      console.log(`num2 is ${number2}`)      
+    })
   }
-  buttons.item(10).style.backgroundColor = '#FFC480';
-  console.log(`add is ${add}`)
-}
-subtract.onclick = () => {
-  if(display.textContent != '0') {
-    subtract = true
-  } else {
-    subtract = false
-  }
-  buttons.item(11).style.backgroundColor = '#FFC480';
-  console.log(`subtract is ${subtract}`)
-}
-multiply.onclick = () => {
-  if(display.textContent != '0') {
-    multiply = true
-  } else {
-    multiply = false
-  }
-  buttons.item(12).style.backgroundColor = '#FFC480';
-  console.log(`multiply is ${multiply}`)
-}
-divide.onclick = () => {
-  if(display.textContent != '0') {
-    divide = true
-  } else {
-    divide = false
-  }
-  buttons.item(13).style.backgroundColor = '#FFC480';
-  console.log(`divide is ${divide}`)
-}
+} 
