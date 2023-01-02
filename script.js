@@ -1,6 +1,6 @@
 // create arithmetic functions 
 
-function additon(x,y) {
+function addition(x,y) {
   let addResult = x + y
   return addResult
 }
