@@ -34,19 +34,20 @@ let divide = false
 const numArr = []
 let number1 = 0
 
-if((add == false ) && (multiply == false) 
-&& (divide == false) && (subtract == false)) {
-  for(let i=0;i<=9;i++) {
-    buttons.item(i).addEventListener('click', () => {
+
+for(let i=0;i<=9;i++) {
+  buttons.item(i).addEventListener('click', () => {
+    if (!add && !subtract && !multiply && !divide) {
       numArr.push(buttons.item(i).textContent)
       display.textContent = (numArr.join(''))
       const num1 = display.textContent
       number1 = num1
       console.log(`num1 is ${number1}`)
       console.log(add)
-    })
-  }
+    }
+  })
 }
+
 // for(let i=0;i<=9;i++) {
 //   buttons.item(i).addEventListener('click', () => {
 //     numArr.push(buttons.item(i).textContent)
