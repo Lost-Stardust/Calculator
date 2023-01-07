@@ -3,24 +3,32 @@
 function addition(x,y) {
   let addResult = x + y
   console.log(addResult)
+  number1 = addResult
+  console.log(`num1 is ${number1}`)
   const array = [addResult]
   display.textContent = (array.join(''))
 }
 function subtraction(x,y) {
   let subtractResult = x - y
   console.log(subtractResult)
+  number1 = subtractResult
+  console.log(`num1 is ${number1}`)
   const array = [subtractResult]
   display.textContent = (array.join(''))
 }
 function multiplication(x,y) {
   let multiplyResult = x * y
   console.log(multiplyResult)
+  number1 = multiplyResult
+  console.log(`num1 is ${number1}`)
   const array = [multiplyResult]
   display.textContent = (array.join(''))
 }
 function division(x,y) {
   let divideResult = x / y
   console.log(divideResult)
+  number1 = divideResult
+  console.log(`num1 is ${number1}`)
   const array = [divideResult]
   display.textContent = (array.join(''))
 }
@@ -94,7 +102,7 @@ buttons.item(13).addEventListener('click', () => {
 })
 
 // loop to get the value of num2 via display and make it global
-const numArr2 = []
+let numArr2 = []
 let number2 = 0;
 for(let i=0;i<=9;i++) {
   buttons.item(i).addEventListener('click', () => {
@@ -131,4 +139,7 @@ buttons.item(14).addEventListener('click', () => {
   for(let i=10;i<=13;i++) {
     buttons.item(i).style.backgroundColor = '#EFEFEF';
   }
+  console.log(numArr2)
+  numArr2 = []
+  console.log(numArr2)
 })
