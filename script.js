@@ -102,6 +102,8 @@ buttons.item(13).addEventListener('click', () => {
 })
 
 // loop to get the value of num2 via display and make it global
+// numArr2 is declared with let so that it can be reassigned as empty 
+// to reset number2 and let it take the next value
 let numArr2 = []
 let number2 = 0;
 for(let i=0;i<=9;i++) {
@@ -117,6 +119,10 @@ for(let i=0;i<=9;i++) {
   })
 }
 
+
+// when pressed the equals button sets the operator variables as false to start over
+// calls the arithmetic functions from before.
+// rests the color of the operator buttons from orange (when clicked) to default
 buttons.item(14).addEventListener('click', () => {
   console.log('equals')
   !add
