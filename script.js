@@ -2,7 +2,9 @@
 
 function addition(x,y) {
   let addResult = x + y
-  return addResult
+  console.log(addResult)
+  const array = [addResult]
+  display.textContent = (array.join(''))
 }
 function subtraction(x,y) {
   let subtractResult = x - y
@@ -39,7 +41,7 @@ for(let i=0;i<=9;i++) {
     if (!add && !subtract && !multiply && !divide) {
       numArr.push(buttons.item(i).textContent)
       display.textContent = (numArr.join(''))
-      const num1 = display.textContent
+      const num1 = parseInt(display.textContent)
       number1 = num1
       console.log(`num1 is ${number1}`)
       console.log(add)
@@ -91,10 +93,16 @@ for(let i=0;i<=9;i++) {
       display.textContent = '';
       numArr2.push(buttons.item(i).textContent)
       display.textContent = (numArr2.join(''))
-      const num2 = display.textContent
+      const num2 = parseInt(display.textContent)
       number2 = num2
       console.log(`num2 is ${number2}`) 
     }     
   })
 }
 
+buttons.item(14).addEventListener('click', () => {
+  console.log('equals')
+  if(add) {
+    addition(number1, number2)
+  }
+})
