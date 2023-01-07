@@ -8,15 +8,21 @@ function addition(x,y) {
 }
 function subtraction(x,y) {
   let subtractResult = x - y
-  return subtractResult
+  console.log(subtractResult)
+  const array = [subtractResult]
+  display.textContent = (array.join(''))
 }
 function multiplication(x,y) {
   let multiplyResult = x * y
-  return multiplyResult
+  console.log(multiplyResult)
+  const array = [multiplyResult]
+  display.textContent = (array.join(''))
 }
 function division(x,y) {
   let divideResult = x / y
-  return divideResult
+  console.log(divideResult)
+  const array = [divideResult]
+  display.textContent = (array.join(''))
 }
 
 let buttons = document.querySelectorAll("button")
