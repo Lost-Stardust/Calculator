@@ -82,9 +82,9 @@ buttons.item(13).addEventListener('click', () => {
   }
 })
 
+// loop to get the value of num2 via display and make it global
 const numArr2 = []
 let number2 = 0;
-
 for(let i=0;i<=9;i++) {
   buttons.item(i).addEventListener('click', () => {
     if (add || subtract || multiply || divide) {
