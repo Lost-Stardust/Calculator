@@ -1,4 +1,4 @@
-// create arithmetic functions 
+// arithmetic functions to perform calculations
 
 function addition(x,y) {
   let addResult = x + y
@@ -17,24 +17,23 @@ function division(x,y) {
   return divideResult
 }
 
-// select all buttons and the display
-
 let buttons = document.querySelectorAll("button")
 console.log(buttons)
 const display = document.querySelector("#display")
 console.log(display)
+
+// operation variables to determine 
+// when to run the loop for num1 and num2
 
 let add = false
 let subtract = false
 let multiply = false
 let divide = false
 
-// add event listener to all the number buttons and display them
+// loop to get the value of num1 via display and make it global
 
 const numArr = []
 let number1 = 0
-
-
 for(let i=0;i<=9;i++) {
   buttons.item(i).addEventListener('click', () => {
     if (!add && !subtract && !multiply && !divide) {
@@ -48,21 +47,7 @@ for(let i=0;i<=9;i++) {
   })
 }
 
-// for(let i=0;i<=9;i++) {
-//   buttons.item(i).addEventListener('click', () => {
-//     numArr.push(buttons.item(i).textContent)
-//     display.textContent = (numArr.join(''))
-//     const num1 = display.textContent
-//     number1 = num1
-//     console.log(`num1 is ${number1}`)
-//     console.log(add)
-//   })
-// }
-
-// for loop that loops through the operator buttons
-// stores the value on display on operator click
-// uses global variable to get the value out of scope
-
+//Changes background color of operator buttons on click
 
 for(let i=10;i<=13;i++) {
   buttons.item(i).addEventListener('click', () => {
@@ -75,29 +60,25 @@ for(let i=10;i<=13;i++) {
 buttons.item(10).addEventListener('click', () => {
   if(display.textContent != '0') {
     add = true;
-    console.log( `add is ${add}`)
-    
+    console.log( `add is ${add}`)    
   }
 })
 buttons.item(11).addEventListener('click', () => {
   if(display.textContent != '0') {
     subtract = true;
-    console.log( `subtract is ${subtract}`)
-    
+    console.log( `subtract is ${subtract}`)   
   }
 })
 buttons.item(12).addEventListener('click', () => {
   if(display.textContent != '0') {
     multiply = true;
-    console.log( `multiply is ${multiply}`)
-    
+    console.log( `multiply is ${multiply}`)   
   }
 })
 buttons.item(13).addEventListener('click', () => {
   if(display.textContent != '0') {
     divide = true;
-    console.log( `divide is ${divide}`)
-    
+    console.log( `divide is ${divide}`)   
   }
 })
 
