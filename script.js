@@ -7,6 +7,7 @@ function addition(x,y) {
   console.log(`num1 is ${number1}`)
   const array = [addResult]
   display.textContent = (array.join(''))
+  numArr2 = []
 }
 function subtraction(x,y) {
   let subtractResult = x - y
@@ -15,6 +16,7 @@ function subtraction(x,y) {
   console.log(`num1 is ${number1}`)
   const array = [subtractResult]
   display.textContent = (array.join(''))
+  numArr2 = []
 }
 function multiplication(x,y) {
   let multiplyResult = x * y
@@ -23,6 +25,7 @@ function multiplication(x,y) {
   console.log(`num1 is ${number1}`)
   const array = [multiplyResult]
   display.textContent = (array.join(''))
+  numArr2 = []
 }
 function division(x,y) {
   let divideResult = x / y
@@ -31,6 +34,7 @@ function division(x,y) {
   console.log(`num1 is ${number1}`)
   const array = [divideResult]
   display.textContent = (array.join(''))
+  numArr2 = []
 }
 
 let buttons = document.querySelectorAll("button")
@@ -63,7 +67,10 @@ for(let i=0;i<=9;i++) {
   })
 }
 
- 
+// these listeners are used to set the operator variables true 
+// depending on which button was clicked. Also sets the color of that button to orange
+// add in if statements that allow user to chain operations
+
 buttons.item(10).addEventListener('click', () => {
   if(display.textContent != '0') {
     add = true;
@@ -71,6 +78,24 @@ buttons.item(10).addEventListener('click', () => {
   }
   if(add) {
     buttons.item(10).style.backgroundColor = '#FFC480';
+  }
+  if(subtract) {
+    subtract = false
+    buttons.item(11).style.backgroundColor = '#EFEFEF';
+    console.log(add)
+    subtraction(number1, number2)
+  }
+  if(multiply) {
+    multiply = false
+    buttons.item(12).style.backgroundColor = '#EFEFEF';
+    console.log(add)
+    multiplication(number1, number2)
+  }
+  if(divide) {
+    divide = false
+    buttons.item(13).style.backgroundColor = '#EFEFEF';
+    console.log(add)
+    division(number1, number2)
   }
 })
 buttons.item(11).addEventListener('click', () => {
@@ -81,6 +106,24 @@ buttons.item(11).addEventListener('click', () => {
   if(subtract) {
     buttons.item(11).style.backgroundColor = '#FFC480';
   }
+  if(add) {
+    add = false
+    buttons.item(10).style.backgroundColor = '#EFEFEF';
+    console.log(add)
+    addition(number1, number2)
+  }
+  if(multiply) {
+    multiply = false
+    buttons.item(12).style.backgroundColor = '#EFEFEF';
+    console.log(add)
+    multiplication(number1, number2)
+  }
+  if(divide) {
+    divide = false
+    buttons.item(13).style.backgroundColor = '#EFEFEF';
+    console.log(add)
+    division(number1, number2)
+  }
 })
 buttons.item(12).addEventListener('click', () => {
   if(display.textContent != '0') {
@@ -90,6 +133,24 @@ buttons.item(12).addEventListener('click', () => {
   if(multiply) {
     buttons.item(12).style.backgroundColor = '#FFC480';
   }
+  if(add) {
+    add = false
+    buttons.item(10).style.backgroundColor = '#EFEFEF';
+    console.log(add)
+    addition(number1, number2)
+  }
+  if(subtract) {
+    subtract = false
+    buttons.item(11).style.backgroundColor = '#EFEFEF';
+    console.log(add)
+    subtraction(number1, number2)
+  }
+  if(divide) {
+    divide = false
+    buttons.item(13).style.backgroundColor = '#EFEFEF';
+    console.log(add)
+    division(number1, number2)
+  }
 })
 buttons.item(13).addEventListener('click', () => {
   if(display.textContent != '0') {
@@ -98,6 +159,24 @@ buttons.item(13).addEventListener('click', () => {
   }
   if(divide) {
     buttons.item(13).style.backgroundColor = '#FFC480';
+  }
+  if(add) {
+    add = false
+    buttons.item(10).style.backgroundColor = '#EFEFEF';
+    console.log(add)
+    addition(number1, number2)
+  }
+  if(subtract) {
+    subtract = false
+    buttons.item(11).style.backgroundColor = '#EFEFEF';
+    console.log(add)
+    subtraction(number1, number2)
+  }
+  if(multiply) {
+    multiply = false
+    buttons.item(12).style.backgroundColor = '#EFEFEF';
+    console.log(add)
+    multiplication(number1, number2)
   }
 })
 
