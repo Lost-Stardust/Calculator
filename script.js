@@ -55,20 +55,14 @@ for(let i=0;i<=9;i++) {
   })
 }
 
-//Changes background color of operator buttons on click
-
-for(let i=10;i<=13;i++) {
-  buttons.item(i).addEventListener('click', () => {
-    buttons.item(i).style.backgroundColor = '#FFC480';
-    console.log(buttons.item(i).className)
-  })
-}
-
  
 buttons.item(10).addEventListener('click', () => {
   if(display.textContent != '0') {
     add = true;
     console.log( `add is ${add}`)    
+  }
+  if(add) {
+    buttons.item(10).style.backgroundColor = '#FFC480';
   }
 })
 buttons.item(11).addEventListener('click', () => {
@@ -76,17 +70,26 @@ buttons.item(11).addEventListener('click', () => {
     subtract = true;
     console.log( `subtract is ${subtract}`)   
   }
+  if(subtract) {
+    buttons.item(11).style.backgroundColor = '#FFC480';
+  }
 })
 buttons.item(12).addEventListener('click', () => {
   if(display.textContent != '0') {
     multiply = true;
     console.log( `multiply is ${multiply}`)   
   }
+  if(multiply) {
+    buttons.item(12).style.backgroundColor = '#FFC480';
+  }
 })
 buttons.item(13).addEventListener('click', () => {
   if(display.textContent != '0') {
     divide = true;
     console.log( `divide is ${divide}`)   
+  }
+  if(divide) {
+    buttons.item(13).style.backgroundColor = '#FFC480';
   }
 })
 
@@ -108,7 +111,24 @@ for(let i=0;i<=9;i++) {
 
 buttons.item(14).addEventListener('click', () => {
   console.log('equals')
+  !add
+  !subtract
+  !multiply
+  !divide
+  
   if(add) {
     addition(number1, number2)
+  }
+  if(subtract) {
+    subtraction(number1, number2)
+  }
+  if(multiply) {
+    multiplication(number1, number2)
+  }
+  if(divide) {
+    division(number1, number2)
+  }
+  for(let i=10;i<=13;i++) {
+    buttons.item(i).style.backgroundColor = '#EFEFEF';
   }
 })
