@@ -76,46 +76,44 @@ buttons.item(10).addEventListener('click', () => {
   if(display.textContent != '0') {
     add = true;
     console.log( `add is ${add}`)
-    getNum2()
+    
   }
 })
 buttons.item(11).addEventListener('click', () => {
   if(display.textContent != '0') {
     subtract = true;
     console.log( `subtract is ${subtract}`)
-    getNum2()
+    
   }
 })
 buttons.item(12).addEventListener('click', () => {
   if(display.textContent != '0') {
     multiply = true;
     console.log( `multiply is ${multiply}`)
-    getNum2()
+    
   }
 })
 buttons.item(13).addEventListener('click', () => {
   if(display.textContent != '0') {
     divide = true;
     console.log( `divide is ${divide}`)
-    getNum2()
+    
   }
 })
 
 const numArr2 = []
 let number2 = 0;
-function getNum2() {
-  if((add == true ) || (multiply == true) 
-  || (divide == true) || (subtract == true)) {
-    console.log('it works, kinda')
-    for(let i=0;i<=9;i++) {
-      buttons.item(i).addEventListener('click', () => {
-        display.textContent = '';
-        numArr2.push(buttons.item(i).textContent)
-        display.textContent = (numArr2.join(''))
-        const num2 = display.textContent
-        number2 = num2
-        console.log(`num2 is ${number2}`)      
-      })
-    }
-  }
+
+for(let i=0;i<=9;i++) {
+  buttons.item(i).addEventListener('click', () => {
+    if (add || subtract || multiply || divide) {
+      display.textContent = '';
+      numArr2.push(buttons.item(i).textContent)
+      display.textContent = (numArr2.join(''))
+      const num2 = display.textContent
+      number2 = num2
+      console.log(`num2 is ${number2}`) 
+    }     
+  })
 }
+
