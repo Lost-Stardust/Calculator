@@ -1,5 +1,5 @@
 // arithmetic functions to perform calculations
-
+// added numArr2 = [] to empty the array to take the next num2 value.
 function addition(x,y) {
   let addResult = x + y
   console.log(addResult)
@@ -70,6 +70,9 @@ for(let i=0;i<=9;i++) {
 // these listeners are used to set the operator variables true 
 // depending on which button was clicked. Also sets the color of that button to orange
 // add in if statements that allow user to chain operations
+// Operations are chained by adding conditions for each operation.
+// if one operation is true alongside one more then the first operator 
+// automatically calculates the first pair of operation e.g., 1+2 is a pair
 
 buttons.item(10).addEventListener('click', () => {
   if(display.textContent != '0') {
