@@ -34,6 +34,9 @@ function division(x,y) {
   console.log(`num1 is ${number1}`)
   const array = [divideResult]
   display.textContent = (array.join(''))
+  if(display.textContent == Infinity) {
+    display.textContent = 'Its over 9000!!'
+  }
   numArr2 = []
 }
 
