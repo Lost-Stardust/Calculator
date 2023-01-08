@@ -43,7 +43,6 @@ button {
     overflow-x: auto;
 }
 button:hover {
-    /* background-color: #cfcfcff8; */
     cursor: pointer;
 }
 button:active {
