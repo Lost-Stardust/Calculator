@@ -36,6 +36,7 @@ function division(x,y) {
   display.textContent = (array.join(''))
   if(display.textContent == Infinity) {
     display.textContent = 'Its over 9000!!'
+    setTimeout(() => {location.reload()}, 2100)
   }
   numArr2 = []
 }
