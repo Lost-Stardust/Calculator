@@ -231,3 +231,7 @@ buttons.item(14).addEventListener('click', () => {
   numArr2 = []
   console.log(numArr2)
 })
+
+buttons.item(15).addEventListener('click', () => {
+  location.reload();
+})
