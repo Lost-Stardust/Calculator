@@ -6,6 +6,7 @@ body {
     min-width: 100vh;
     box-sizing: border-box;
     background-image: url("https://cdn.pixabay.com/photo/2022/01/14/06/53/education-6936596_960_720.jpg");
+    background-size: cover;
 }
 #calculator {
     border: solid black 2px;
