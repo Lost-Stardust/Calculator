@@ -87,19 +87,19 @@ buttons.item(10).addEventListener('click', () => {
   }
   if(subtract) {
     subtract = false
-    buttons.item(11).style.backgroundColor = '#EFEFEF';
+    buttons.item(11).style.backgroundColor = '#c79fd1f8';
     console.log(add)
     subtraction(number1, number2)
   }
   if(multiply) {
     multiply = false
-    buttons.item(12).style.backgroundColor = '#EFEFEF';
+    buttons.item(12).style.backgroundColor = '#c79fd1f8';
     console.log(add)
     multiplication(number1, number2)
   }
   if(divide) {
     divide = false
-    buttons.item(13).style.backgroundColor = '#EFEFEF';
+    buttons.item(13).style.backgroundColor = '#c79fd1f8';
     console.log(add)
     division(number1, number2)
   }
@@ -114,19 +114,19 @@ buttons.item(11).addEventListener('click', () => {
   }
   if(add) {
     add = false
-    buttons.item(10).style.backgroundColor = '#EFEFEF';
+    buttons.item(10).style.backgroundColor = '#c79fd1f8';
     console.log(add)
     addition(number1, number2)
   }
   if(multiply) {
     multiply = false
-    buttons.item(12).style.backgroundColor = '#EFEFEF';
+    buttons.item(12).style.backgroundColor = '#c79fd1f8';
     console.log(add)
     multiplication(number1, number2)
   }
   if(divide) {
     divide = false
-    buttons.item(13).style.backgroundColor = '#EFEFEF';
+    buttons.item(13).style.backgroundColor = '#c79fd1f8';
     console.log(add)
     division(number1, number2)
   }
@@ -141,19 +141,19 @@ buttons.item(12).addEventListener('click', () => {
   }
   if(add) {
     add = false
-    buttons.item(10).style.backgroundColor = '#EFEFEF';
+    buttons.item(10).style.backgroundColor = '#c79fd1f8';
     console.log(add)
     addition(number1, number2)
   }
   if(subtract) {
     subtract = false
-    buttons.item(11).style.backgroundColor = '#EFEFEF';
+    buttons.item(11).style.backgroundColor = '#c79fd1f8';
     console.log(add)
     subtraction(number1, number2)
   }
   if(divide) {
     divide = false
-    buttons.item(13).style.backgroundColor = '#EFEFEF';
+    buttons.item(13).style.backgroundColor = '#c79fd1f8';
     console.log(add)
     division(number1, number2)
   }
@@ -168,19 +168,19 @@ buttons.item(13).addEventListener('click', () => {
   }
   if(add) {
     add = false
-    buttons.item(10).style.backgroundColor = '#EFEFEF';
+    buttons.item(10).style.backgroundColor = '#c79fd1f8';
     console.log(add)
     addition(number1, number2)
   }
   if(subtract) {
     subtract = false
-    buttons.item(11).style.backgroundColor = '#EFEFEF';
+    buttons.item(11).style.backgroundColor = '#c79fd1f8';
     console.log(add)
     subtraction(number1, number2)
   }
   if(multiply) {
     multiply = false
-    buttons.item(12).style.backgroundColor = '#EFEFEF';
+    buttons.item(12).style.backgroundColor = '#c79fd1f8';
     console.log(add)
     multiplication(number1, number2)
   }
