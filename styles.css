@@ -43,7 +43,14 @@ button {
     overflow-x: auto;
 }
 button:hover {
+    /* background-color: #cfcfcff8; */
+    cursor: pointer;
+}
+button:active {
     background-color: #cfcfcff8;
+}
+#display:hover {
+    cursor: default;
 }
 #display::-webkit-scrollbar {
     width: 1em;
