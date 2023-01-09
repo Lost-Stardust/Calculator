@@ -37,12 +37,12 @@ button {
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: #00ff9573;
+    background-color: rgb(32, 240, 170);
     height: 90px;
     margin: 2.5vh;
     border-radius: 5px;
     overflow-x: auto;
-    color: rgb(255, 255, 255);
+    color: black;
 }
 button:hover {
     cursor: pointer;
@@ -68,7 +68,7 @@ button:active {
     border-radius: 5px;
 }
 .add, .subtract, .multiply, .divide {
-    background-color: #00b91fa2;
+    background-color: #009b1afd;
     color: white;
 }
 .clear:active {
