@@ -84,23 +84,23 @@ buttons.item(10).addEventListener('click', () => {
     console.log( `add is ${add}`)    
   }
   if(add) {
-    buttons.item(10).style.backgroundColor = '#00b81f';
+    buttons.item(10).style.backgroundColor = '#00b91fa2';
   }
   if(subtract) {
     subtract = false
-    buttons.item(11).style.backgroundColor = '#00b91fa2';
+    buttons.item(11).style.backgroundColor = '#009b1afd';
     console.log(add)
     subtraction(number1, number2)
   }
   if(multiply) {
     multiply = false
-    buttons.item(12).style.backgroundColor = '#00b91fa2';
+    buttons.item(12).style.backgroundColor = '#009b1afd';
     console.log(add)
     multiplication(number1, number2)
   }
   if(divide) {
     divide = false
-    buttons.item(13).style.backgroundColor = '#00b91fa2';
+    buttons.item(13).style.backgroundColor = '#009b1afd';
     console.log(add)
     division(number1, number2)
   }
@@ -111,23 +111,23 @@ buttons.item(11).addEventListener('click', () => {
     console.log( `subtract is ${subtract}`)   
   }
   if(subtract) {
-    buttons.item(11).style.backgroundColor = '#00b81f';
+    buttons.item(11).style.backgroundColor = '#00b91fa2';
   }
   if(add) {
     add = false
-    buttons.item(10).style.backgroundColor = '#00b91fa2';
+    buttons.item(10).style.backgroundColor = '#009b1afd';
     console.log(add)
     addition(number1, number2)
   }
   if(multiply) {
     multiply = false
-    buttons.item(12).style.backgroundColor = '#00b91fa2';
+    buttons.item(12).style.backgroundColor = '#009b1afd';
     console.log(add)
     multiplication(number1, number2)
   }
   if(divide) {
     divide = false
-    buttons.item(13).style.backgroundColor = '#00b91fa2';
+    buttons.item(13).style.backgroundColor = '#009b1afd';
     console.log(add)
     division(number1, number2)
   }
@@ -138,23 +138,23 @@ buttons.item(12).addEventListener('click', () => {
     console.log( `multiply is ${multiply}`)   
   }
   if(multiply) {
-    buttons.item(12).style.backgroundColor = '#00b81f';
+    buttons.item(12).style.backgroundColor = '#00b91fa2';
   }
   if(add) {
     add = false
-    buttons.item(10).style.backgroundColor = '#00b91fa2';
+    buttons.item(10).style.backgroundColor = '#009b1afd';
     console.log(add)
     addition(number1, number2)
   }
   if(subtract) {
     subtract = false
-    buttons.item(11).style.backgroundColor = '#00b91fa2';
+    buttons.item(11).style.backgroundColor = '#009b1afd';
     console.log(add)
     subtraction(number1, number2)
   }
   if(divide) {
     divide = false
-    buttons.item(13).style.backgroundColor = '#00b91fa2';
+    buttons.item(13).style.backgroundColor = '#009b1afd';
     console.log(add)
     division(number1, number2)
   }
@@ -165,23 +165,23 @@ buttons.item(13).addEventListener('click', () => {
     console.log( `divide is ${divide}`)   
   }
   if(divide) {
-    buttons.item(13).style.backgroundColor = '#00b81f';
+    buttons.item(13).style.backgroundColor = '#00b91fa2';
   }
   if(add) {
     add = false
-    buttons.item(10).style.backgroundColor = '#00b91fa2';
+    buttons.item(10).style.backgroundColor = '#009b1afd';
     console.log(add)
     addition(number1, number2)
   }
   if(subtract) {
     subtract = false
-    buttons.item(11).style.backgroundColor = '#00b91fa2';
+    buttons.item(11).style.backgroundColor = '#009b1afd';
     console.log(add)
     subtraction(number1, number2)
   }
   if(multiply) {
     multiply = false
-    buttons.item(12).style.backgroundColor = '#00b91fa2';
+    buttons.item(12).style.backgroundColor = '#009b1afd';
     console.log(add)
     multiplication(number1, number2)
   }
@@ -229,7 +229,7 @@ buttons.item(14).addEventListener('click', () => {
     division(number1, number2)
   }
   for(let i=10;i<=13;i++) {
-    buttons.item(i).style.backgroundColor = '#00b91fa2';
+    buttons.item(i).style.backgroundColor = '#009b1afd';
   }
   console.log(numArr2)
   numArr2 = []
