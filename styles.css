@@ -5,15 +5,15 @@ body {
     min-height: 98vh;
     min-width: 100vh;
     box-sizing: border-box;
-    background-image: url("https://cdn.pixabay.com/photo/2022/01/14/06/53/education-6936596_960_720.jpg");
-    background-size: cover;
+    background-color: black;
 }
 #calculator {
-    border: solid black 2px;
+    border: solid rgb(12, 139, 0) 2px;
     height: 67vh;
     width: 460px;
     background-color: #788294;
     border-radius: 5px;
+    background-image: url("https://media4.giphy.com/media/WoD6JZnwap6s8/giphy.gif?cid=ecf05e475cta83aqsfvwubgpslghm4nkes2ckd9nmn785f54&rid=giphy.gif&ct=g");
 }
 #buttons {
     height: 45vh;
@@ -37,17 +37,20 @@ button {
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: #53d39e;
+    background-color: #00ff9573;
     height: 90px;
     margin: 2.5vh;
     border-radius: 5px;
     overflow-x: auto;
+    color: rgb(255, 255, 255);
 }
 button:hover {
     cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    color: white;
 }
 button:active {
-    background-color: #cfcfcff8;
+    background-color: #06eb1980;
 }
 #display:hover {
     cursor: default;
@@ -65,8 +68,12 @@ button:active {
     border-radius: 5px;
 }
 .add, .subtract, .multiply, .divide {
-    background-color: #c79fd1f8;
+    background-color: #00b91fa2;
+    color: white;
 }
 .clear:active {
     background-color: rgb(240, 65, 65);
+}
+.clear {
+    background-color:  rgb(240, 65, 65);
 }
