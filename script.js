@@ -56,7 +56,7 @@ let divide = false
 
 // loop to get the value of num1 via display and make it global
 
-const numArr = []
+let numArr = []
 let number1 = 0
 for(let i=0;i<=9;i++) {
   buttons.item(i).addEventListener('click', () => {
@@ -211,10 +211,6 @@ for(let i=0;i<=9;i++) {
 // rests the color of the operator buttons from orange (when clicked) to default
 buttons.item(14).addEventListener('click', () => {
   console.log('equals')
-  !add
-  !subtract
-  !multiply
-  !divide
   
   if(add) {
     addition(number1, number2)
@@ -228,12 +224,20 @@ buttons.item(14).addEventListener('click', () => {
   if(divide) {
     division(number1, number2)
   }
+
+  add = false
+  subtract = false
+  multiply = false
+  divide = false
+  
   for(let i=10;i<=13;i++) {
     buttons.item(i).style.backgroundColor = '#009b1afd';
   }
-  console.log(numArr2)
+  numArr = [];
+  console.log(numArr)
   numArr2 = []
   console.log(numArr2)
+  console.log(add,subtract,multiply,divide)
 })
 
 buttons.item(15).addEventListener('click', () => {
