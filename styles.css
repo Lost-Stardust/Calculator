@@ -14,6 +14,9 @@ body {
     background-color: #788294;
     border-radius: 5px;
     background-image: url("https://media4.giphy.com/media/WoD6JZnwap6s8/giphy.gif?cid=ecf05e475cta83aqsfvwubgpslghm4nkes2ckd9nmn785f54&rid=giphy.gif&ct=g");
+    box-shadow: rgba(0, 255, 0, 0.25) 0px 54px 55px, rgba(0, 255, 0, 0.12) 0px -12px 30px,
+     rgba(0, 255, 0, 0.12) 0px 4px 6px,rgba(0, 255, 0, 0.17) 0px 12px 13px,
+     rgba(0, 255, 0, 0.09) 0px -3px 5px;
 }
 #buttons {
     height: 45vh;
